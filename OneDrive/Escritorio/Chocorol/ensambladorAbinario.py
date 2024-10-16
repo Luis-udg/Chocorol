@@ -36,20 +36,3 @@ def ensambladorAbinario(instruccionEnsamblador):
         dir2Lectura = direccionesMemoria.get(resultados[2])
     
     return MC+dir1Lectura+opAluBinario+dir2Lectura+dirMemoriaB
-
-instruccion = "SUMA $3, $4, $0"
-instruccionBinaria=ensambladorAbinario(instruccion)
-print(f"Instruccion ensamblador: {instruccion}")
-print(f"Instruccion binaria: {instruccionBinaria}\n")
-
-
-
-instruccion = "RESTA $0, $7, $5"
-instruccionBinaria=ensambladorAbinario(instruccion)
-print(f"Instruccion ensamblador: {instruccion}")
-print(f"Instruccion binaria: {instruccionBinaria}")
-
-instruccion = "LEER $3"
-instruccionBinaria=ensambladorAbinario(instruccion)
-print(f"Instruccion ensamblador: {instruccion}")
-print(f"Instruccion binaria: {instruccionBinaria}\n")

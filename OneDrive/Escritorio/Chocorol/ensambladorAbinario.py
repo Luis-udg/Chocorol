@@ -27,7 +27,7 @@ def ensambladorAbinario(instruccionEnsamblador):
     resultados = patron.findall(instruccionEnsamblador)
     dirMemoriaB = direccionesMemoria.get(resultados[0])
     if operacion == 'LEER' :
-        MC='10'
+        MC='00'
         dir1Lectura = "00000"
         dir2Lectura = "00010"
     else:
